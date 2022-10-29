@@ -11,6 +11,6 @@ CONFIG_DIR = os.path.abspath(os.getenv("CONFIG_DIR"))
 
 
 def load_config():
-    with open(os.path.join(CONFIG_DIR, "config.py"), "r") as config_file:
+    with open(os.path.join(CONFIG_DIR, "config.yml"), "r") as config_file:
         config = yaml.safe_load(config_file)
     return config
