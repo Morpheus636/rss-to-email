@@ -10,7 +10,7 @@ dotenv.load_dotenv("dev.env")
 CONFIG_DIR = os.path.abspath(os.getenv("CONFIG_DIR"))
 
 
-def load_config():
-    with open(os.path.join(CONFIG_DIR, "config.yml"), "r") as config_file:
-        config = yaml.safe_load(config_file)
-    return config
+def load_feeds():
+    with open(os.path.join(CONFIG_DIR, "feeds.yml"), "r") as feeds_file:
+        feeds = yaml.safe_load(feeds_file)
+    return feeds
