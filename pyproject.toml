@@ -9,6 +9,7 @@ python = "^3.10"
 PyYAML = "^6.0"
 python-dotenv = "^0.21.0"
 feedparser = "^6.0.10"
+yagmail = "^0.15.293"
 
 [tool.poetry.dev-dependencies]
 black = "^22.2.0"
