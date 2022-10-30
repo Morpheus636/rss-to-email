@@ -1,37 +1,26 @@
-# Project Name
-
-<Description>
+# RSS-to-Email
+An RSS client that monitors your feeds and sends new posts straight to your email inbox.
 
 ## Features
-- a feature
-- another feature
-- a third feature
+- Makes your subscriptions easy to manage with Newsletter-Subscriptions-As-Code
+- Simple Deployment with Docker
 
 ## Technologies
-- language
-- library
-- another library
+- Python
+- `feedparser`
+- `pyyaml`
+- Docker
 
 ## Usage
-<Usage Instructions>
+See the [deployment docs](/docs/PRODUCTION.MD) for instructions.
 
 ## Contact
-<Remove this section for unmaintained projects>
 To submit a bug report or feature request, please open a GitHub Issue in this repository. 
 
 To ask a question or get support, you can join my [Discord Server](https://discord.morpheus636.com) or create a Discussions thread within this repository.
 
 ## Contributing
-EITHER:
-
 This project is maintained my Morpheus636. Contribution guidelines for all of my projects can be found at https://docs.morpheus636.com/contributing
-OR:
-
-This project is unmaintained, developed for my personal use and released for the benefit of anyone interested. Issues may not be addressed and pull
-requests will likely be closed without merging.
-
-## Credits
-
 
 ## Copyright Notice
 © Copyright 2022 Josh Levin ([Morpheus636](https://github.com/morpheus636))
