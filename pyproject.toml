@@ -8,6 +8,7 @@ authors = ["Josh Levin <morpheus636@morpheus636.com>"]
 python = "^3.10"
 PyYAML = "^6.0"
 python-dotenv = "^0.21.0"
+feedparser = "^6.0.10"
 
 [tool.poetry.dev-dependencies]
 black = "^22.2.0"

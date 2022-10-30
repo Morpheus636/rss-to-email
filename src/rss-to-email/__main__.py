@@ -1,4 +1,6 @@
 import config
+import rss
 
 
-feeds_dict = config.load_feeds()
+feeds = config.load_feeds()
+new_entires = rss.get_new_entries(feeds)
