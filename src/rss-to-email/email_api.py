@@ -7,7 +7,11 @@ email_client = yagmail.SMTP(os.getenv("GMAIL_USER"), os.getenv("GMAIL_PASSWORD")
 
 
 def send_entry(feed_and_entry: tuple) -> None:
-    """Send an entry via gmail."""
+    """Send an entry via gmail.
+
+    :param feed_and_entry: Tuple containing the feed name and entry
+    :return: None
+    """
     feed_name = feed_and_entry[0]
     entry = feed_and_entry[1]
 
