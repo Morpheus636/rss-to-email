@@ -1,0 +1,5 @@
+# This is a template for adding feeds:
+sample_feed:  # Replace this label with the name of the feed.
+  # It's recommended that you populate this field with the link to the most recent entry from the feed. It will be updated automatically.
+  last_entry: https://frame.work/blog/introducing-the-framework-laptop-chromebook-edition
+  url: https://frame.work/blog.rss  # The URL to the feed itself.
