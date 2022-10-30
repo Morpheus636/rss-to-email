@@ -17,7 +17,10 @@ def send_entry(feed_and_entry: tuple) -> None:
     feed_name = feed_and_entry[0]
     entry = feed_and_entry[1]
 
-    contents_formatted = f"{entry.description} \n\n View full source: {entry.link} \nPublished in {feed_name} at {entry.published}\n Sent by Morpheus636's rss-to-email."
+    contents_formatted = f"{entry.description}\
+            \n\n<a href={entry.link}>View full source</a>\
+            \nPublished in {feed_name} at {entry.published}\
+            \nSent via rss-to-email"
 
     email_client.send(
         to=RECIPIENT,
