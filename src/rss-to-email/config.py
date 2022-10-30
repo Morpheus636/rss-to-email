@@ -7,7 +7,7 @@ import yaml
 # Load environment variable from ./.env and ./local.env
 dotenv.load_dotenv()
 dotenv.load_dotenv("dev.env")
-CONFIG_DIR = os.path.abspath(os.getenv("CONFIG_DIR"))
+CONFIG_DIR = os.path.abspath(os.environ["CONFIG_DIR"])
 FEEDS_PATH = os.path.join(CONFIG_DIR, "feeds.yml")
 
 

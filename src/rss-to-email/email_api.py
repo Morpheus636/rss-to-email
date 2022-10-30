@@ -3,7 +3,9 @@ import os
 import yagmail
 
 
-email_client = yagmail.SMTP(os.getenv("GMAIL_USER"), os.getenv("GMAIL_PASSWORD"))
+RECIPIENT = os.environ["RECIPIENT_ADDRESS"]
+
+email_client = yagmail.SMTP(os.environ["GMAIL_USER"], os.environ["GMAIL_PASSWORD"])
 
 
 def send_entry(feed_and_entry: tuple) -> None:
@@ -18,7 +20,7 @@ def send_entry(feed_and_entry: tuple) -> None:
     contents_formatted = f"{entry.description} \n\n View full source: {entry.link} \nPublished in {feed_name} at {entry.published}\n Sent by Morpheus636's rss-to-email."
 
     email_client.send(
-        to=os.getenv("RECIPIENT_ADDRESS"),
+        to=RECIPIENT,
         subject=f"{feed_name}: {entry.title}",
         contents=contents_formatted,
     )
