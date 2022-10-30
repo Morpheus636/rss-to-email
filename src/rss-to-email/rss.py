@@ -2,7 +2,14 @@ import config
 import feedparser
 
 
-def get_new_entries(feeds) -> list:
+def get_new_entries(feeds: dict) -> list:
+    """Gets a list of entries added to each feed since the last time it was parsed.
+
+    :param feeds: Dict of feed as loaded py `config.load_feeds()`
+    :type feeds: dict
+    :return: List of tuples for each new entry in the format (feed_name, entry)
+    :rtype: list
+    """
     new_entries = []
     for feed in feeds:
         parsed_feed = feedparser.parse(feeds[feed]["url"])
