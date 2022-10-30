@@ -18,4 +18,7 @@ RUN pip install poetry
 # Install dependencies
 RUN poetry install --no-dev
 
+# Set the CONFIG_DIR env var for production
+ENV CONFIG_DIR "/home/default/.config/rss-to-email"
+
 CMD ["poetry", "run", "python", "src/rss-to-email"]
