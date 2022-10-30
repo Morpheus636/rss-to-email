@@ -3,4 +3,5 @@ import rss
 
 
 feeds = config.load_feeds()
-new_entires = rss.get_new_entries(feeds)
+new_entries = rss.get_new_entries(feeds)
+print(new_entries)

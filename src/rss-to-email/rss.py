@@ -4,15 +4,13 @@ import feedparser
 
 def get_new_entries(feeds) -> list:
     new_entries = []
-
     for feed in feeds:
         parsed_feed = feedparser.parse(feeds[feed]["url"])
         # Go through entries and process any that were published since the feed was last parsed.
         for entry in parsed_feed.entries:
             # If the entry is new, add it to the list to return.
             if entry.link != feeds[feed]["last_entry"]:
-                new_entries.append(entry)
-                print(entry)  # FIXME
+                new_entries.append((feed, entry))
             # Break if the entry is not new.
             else:
                 break
