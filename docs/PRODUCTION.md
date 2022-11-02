@@ -1,8 +1,17 @@
 # Deployment
 
 ## Docker
-To build the docker container, run:
+### Pre-Built Image
+Releases are published to the [Morpheus636/rss-to-email](https://hub.docker.com/r/morpheus636/rss-to-email) Dockerhub page.
+
+To pull the image from Dockerhub, run:
+```bash
+https://hub.docker.com/r/morpheus636/rss-to-email
 ```
+
+### Custom Build
+To build the docker container, run:
+```bash
 docker build .
 ```
 
