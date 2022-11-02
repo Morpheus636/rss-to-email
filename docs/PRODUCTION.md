@@ -6,7 +6,7 @@ Releases are published to the [Morpheus636/rss-to-email](https://hub.docker.com/
 
 To pull the image from Dockerhub, run:
 ```bash
-https://hub.docker.com/r/morpheus636/rss-to-email
+docker pull morpheus636/rss-to-email
 ```
 
 ### Custom Build
