@@ -1,5 +1,5 @@
-# This is a template for adding feeds:
-sample_feed:  # Replace this label with the name of the feed.
-  # It's recommended that you populate this field with the link to the most recent entry from the feed. It will be updated automatically.
-  last_entry: https://frame.work/blog/introducing-the-framework-laptop-chromebook-edition
+# Comments in this file will be overwritten. 
+sample_feed:  # The name of the feed that will appear in the subject of emails.
+  last_entry: null  # This stores the last entry that was already parsed to prevent duplicate emails.
+                    # It will be populated on first run if you leave it as null.
   url: https://frame.work/blog.rss  # The URL to the feed itself.
