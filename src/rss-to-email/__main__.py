@@ -9,12 +9,9 @@ import rss
 def main():
     # Check if it's the first run of the config file.
     feeds = config.load_feeds()
-    print(feeds)
     # Get the last entry field from a random feed.
     last_entry = random.choice(list(feeds.values()))["last_entry"]
-    print(last_entry)
     if not last_entry:
-        print("Null")
         rss.get_new_entries(feeds, count=1)
 
     # Start the poll loop.
